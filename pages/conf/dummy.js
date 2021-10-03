@@ -26,7 +26,7 @@ export default function Home() {
         <h1 className={styles.title}>GITHUB_NAME</h1> 
       
         </div>
-        <Image unoptimized src="GITHUB_URL" width={128} height={128}/>
+        <img src="GITHUB_URL" width={128} height={128}/>
 
         <p>Celberate the conference without fail.</p>
         <p>October 31, 2021 9am-1pm PT / Online.</p>
@@ -36,13 +36,13 @@ export default function Home() {
        <footer >
         <section  className={styles.footersection}>
           <a href="https://twitter.com" target="_blank"rel="noopener noreferrer">
-            <Image unoptimized src="/twitter.png" alt="Twitter Logo" width={64} height={64} />
+            <img src="/twitter.png" alt="Twitter Logo" width={64} height={64} />
           </a>
           <a href="https://facebook.com" target="_blank"rel="noopener noreferrer">
-          <Image unoptimized src="/facebook.png" alt="Facebook Logo" width={64} height={64} />
+          <img src="/facebook.png" alt="Facebook Logo" width={64} height={64} />
           </a>
           <a href="https://linkedin.com" target="_blank"rel="noopener noreferrer">
-          <Image unoptimized src="/linkedin.png" alt="Facebook Logo" width={64} height={64} />
+          <img src="/linkedin.png" alt="Facebook Logo" width={64} height={64} />
           </a>
           </section>
         <section className={styles.footer}>

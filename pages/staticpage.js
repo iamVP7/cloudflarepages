@@ -32,13 +32,13 @@ Tweet Your Ticket</a>
        <footer >
         <section  className={styles.footersection}>
           <a href="https://twitter.com" target="_blank"rel="noopener noreferrer">
-            <Image unoptimized src="/twitter.png" alt="Twitter Logo" width={64} height={64} />
+            <img src="/twitter.png" alt="Twitter Logo" width={64} height={64} />
           </a>
           <a href="https://facebook.com" target="_blank"rel="noopener noreferrer">
-          <Image unoptimized src="/facebook.png" alt="Facebook Logo" width={64} height={64} />
+          <img src="/facebook.png" alt="Facebook Logo" width={64} height={64} />
           </a>
           <a href="https://linkedin.com" target="_blank"rel="noopener noreferrer">
-          <Image unoptimized src="/linkedin.png" alt="Facebook Logo" width={64} height={64} />
+          <img src="/linkedin.png" alt="Facebook Logo" width={64} height={64} />
           </a>
           </section>
         <section className={styles.footer}>
