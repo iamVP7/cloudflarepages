@@ -3,7 +3,10 @@ import styles from '../../styles/Home.module.css'
 import Image from 'next/image'
 
 const myLoaderdymmy = ({ src, width, quality }) => {
-  return `/${src}?w=${width}&q=${quality || 75}`
+  if (!quality) {
+    quality = 75
+  }
+  return `https://images.viswacloudflare.workers.dev?width=${width}&quality=${quality}&image=http://localhost:3000${src}`
 }
 
 export default function Home() {
@@ -23,7 +26,7 @@ export default function Home() {
         <h1 className={styles.title}>GITHUB_NAME</h1> 
       
         </div>
-        <Image loader={myLoaderdymmy} src="GITHUB_URL" width={128} height={128}/>
+        <Image unoptimized src="GITHUB_URL" width={128} height={128}/>
 
         <p>Celberate the conference without fail.</p>
         <p>October 31, 2021 9am-1pm PT / Online.</p>
@@ -33,13 +36,13 @@ export default function Home() {
        <footer >
         <section  className={styles.footersection}>
           <a href="https://twitter.com" target="_blank"rel="noopener noreferrer">
-            <Image loader={myLoaderdymmy} src="/twitter.png" alt="Twitter Logo" width={64} height={64} />
+            <Image unoptimized src="/twitter.png" alt="Twitter Logo" width={64} height={64} />
           </a>
           <a href="https://facebook.com" target="_blank"rel="noopener noreferrer">
-          <Image loader={myLoaderdymmy} src="/facebook.png" alt="Facebook Logo" width={64} height={64} />
+          <Image unoptimized src="/facebook.png" alt="Facebook Logo" width={64} height={64} />
           </a>
           <a href="https://linkedin.com" target="_blank"rel="noopener noreferrer">
-          <Image loader={myLoaderdymmy} src="/linkedin.png" alt="Facebook Logo" width={64} height={64} />
+          <Image unoptimized src="/linkedin.png" alt="Facebook Logo" width={64} height={64} />
           </a>
           </section>
         <section className={styles.footer}>
