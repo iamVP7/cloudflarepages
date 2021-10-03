@@ -2,6 +2,9 @@ import Head from 'next/head'
 import styles from '../../styles/Home.module.css'
 import Image from 'next/image'
 
+const myLoaderdymmy = ({ src, width, quality }) => {
+  return `/${src}?w=${width}&q=${quality || 75}`
+}
 
 export default function Home() {
   return (
@@ -20,7 +23,7 @@ export default function Home() {
         <h1 className={styles.title}>GITHUB_NAME</h1> 
       
         </div>
-        <img src="GITHUB_URL" width="128" height="128"/>
+        <Image loader={myLoaderdymmy} src="GITHUB_URL" width={128} height={128}/>
 
         <p>Celberate the conference without fail.</p>
         <p>October 31, 2021 9am-1pm PT / Online.</p>
@@ -30,13 +33,13 @@ export default function Home() {
        <footer >
         <section  className={styles.footersection}>
           <a href="https://twitter.com" target="_blank"rel="noopener noreferrer">
-            <Image src="/twitter.png" alt="Twitter Logo" width={64} height={64} />
+            <Image loader={myLoaderdymmy} src="/twitter.png" alt="Twitter Logo" width={64} height={64} />
           </a>
           <a href="https://facebook.com" target="_blank"rel="noopener noreferrer">
-          <Image src="/facebook.png" alt="Facebook Logo" width={64} height={64} />
+          <Image loader={myLoaderdymmy} src="/facebook.png" alt="Facebook Logo" width={64} height={64} />
           </a>
           <a href="https://linkedin.com" target="_blank"rel="noopener noreferrer">
-          <Image src="/linkedin.png" alt="Facebook Logo" width={64} height={64} />
+          <Image loader={myLoaderdymmy} src="/linkedin.png" alt="Facebook Logo" width={64} height={64} />
           </a>
           </section>
         <section className={styles.footer}>
