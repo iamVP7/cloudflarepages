@@ -2,6 +2,10 @@ import Head from 'next/head'
 import styles from '../styles/Home.module.css'
 import Image from 'next/image'
 
+import twittersrc from '../public/twitter.png'
+import facebookSrc from '../public/facebook.png'
+import linkedSrc from '../public/linkedin.png'
+
 
 export default function Home() {
   return (
@@ -20,7 +24,7 @@ export default function Home() {
         <h1 className={styles.title}>Viswa</h1> 
       
         </div>
-        <img src="https://avatars.githubusercontent.com/u/3106852?v=4" width="128" height="128"/>
+        <Image src="https://avatars.githubusercontent.com/u/3106852?v=4" width={256} height={256}/>
 
         <p>Celberate the conference without fail.</p>
         <p>October 31, 2021 9am-1pm PT / Online.</p>
@@ -30,15 +34,15 @@ export default function Home() {
 Tweet Your Ticket</a>
        </main>
        <footer >
-        <section  className={styles.footersection}>
+       <section  className={styles.footersection}>
           <a href="https://twitter.com" target="_blank"rel="noopener noreferrer">
-            <img src="/twitter.png" alt="Twitter Logo" width={64} height={64} />
+            <Image src={twittersrc} alt="Twitter Logo" />
           </a>
           <a href="https://facebook.com" target="_blank"rel="noopener noreferrer">
-          <img src="/facebook.png" alt="Facebook Logo" width={64} height={64} />
+          <Image src={facebookSrc} alt="Facebook Logo" />
           </a>
           <a href="https://linkedin.com" target="_blank"rel="noopener noreferrer">
-          <img src="/linkedin.png" alt="Facebook Logo" width={64} height={64} />
+          <Image src={linkedSrc} alt="Linkedin Logo" />
           </a>
           </section>
         <section className={styles.footer}>

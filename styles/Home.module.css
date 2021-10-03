@@ -38,6 +38,11 @@
   text-decoration: none;
 }
 
+.firstimage{
+width:800px; 
+height:400px;
+}
+
 .title a:hover,
 .title a:focus,
 .title a:active {
