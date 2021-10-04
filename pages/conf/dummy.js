@@ -1,13 +1,6 @@
 import Head from 'next/head'
 import styles from '../../styles/Home.module.css'
 
-const myLoaderdymmy = ({ src, width, quality }) => {
-  if (!quality) {
-    quality = 75
-  }
-  return `https://images.viswacloudflare.workers.dev?width=${width}&quality=${quality}&image=http://localhost:3000${src}`
-}
-
 export default function Home() {
   return (
     <div className={styles.container}>
@@ -47,7 +40,7 @@ export default function Home() {
         <section className={styles.footer}>
           
         <a
-          href="https://vercel.com?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
+          href="#"
           target="_blank"
           rel="noopener noreferrer"
         >

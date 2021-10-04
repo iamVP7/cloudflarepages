@@ -14,6 +14,7 @@ export default function Home() {
   
   
   async function handleClick(e){
+  
     if(session){
       var userDetailsJSON={};
       userDetailsJSON.email = session.user.email;
@@ -30,6 +31,12 @@ export default function Home() {
         },
         body: JSON.stringify(userDetailsJSON)
     });
+    var jsonResponse =await response.json()
+    if(jsonResponse != null && jsonResponse.message == 'success'){
+      alert("Your digital ticket is"+jsonResponse.url);
+    }
+    }else{
+      alert('Login Again');
     }
   }
   return (
