@@ -91,10 +91,10 @@ export default function Home() {
             <img  src="/twitter.png" alt="Twitter Logo" width={128} height={128} layout="fixed"/>
           </a>
           <a href="https://facebook.com" target="_blank"rel="noopener noreferrer">
-          <img  src="./twitter.png" alt="Facebook Logo" width={128} height={128}/>
+          <img  src="/facebook.png" alt="Facebook Logo" width={128} height={128}/>
           </a>
           <a href="https://linkedin.com" target="_blank"rel="noopener noreferrer">
-          <img src="./twitter.png" alt="Linkedin Logo" width={128} height={128}/>
+          <img src="/linkedin.png" alt="Linkedin Logo" width={128} height={128}/>
           </a>
           </section>
         <section className={styles.footer}>
