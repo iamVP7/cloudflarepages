@@ -54,6 +54,7 @@ export default function Home() {
         <h1 className={styles.title}>
           Conference Names
         </h1>
+        <p>This is the sample template developed to show the power of Cloudflare Workers and Pages; it is inspired from NextJS ticket concept </p>
         <p>Celberate the conference without fail.October 31, 2021 9am-1pm PT / Online.</p>
 
         {!session && <>
