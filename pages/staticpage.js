@@ -18,7 +18,7 @@ export default function Home() {
         <h1 className={styles.title}>Viswa</h1> 
       
         </div>
-        <img src="https://avatars.githubusercontent.com/u/3106852?v=4" width={256} height={256}/>
+        <img src="https://github.com/iamvp7.png" width={256} height={256}/>
 
         <p>Celberate the conference without fail.</p>
         <p>October 31, 2021 9am-1pm PT / Online.</p>
