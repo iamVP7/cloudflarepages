@@ -3,13 +3,9 @@ import Head from 'next/head'
 import styles from '../styles/Home.module.css'
 import SignupForm from '../components/SignupForm'
 
-import { signIn, signOut, useSession, } from 'next-auth/client';
 
 export default function Home() {
-  const [session] = useSession();
-  console.log(session)
-  
-  
+    
   async function handleClick(e){
   
     if(session){
