@@ -39,7 +39,7 @@ const SignupForm = ({ title }) => {
         });
         var jsonResponse =await response.json()
         if(jsonResponse != null && jsonResponse.message == 'success'){
-          alert("Your digital ticket is"+jsonResponse.url);
+          alert("Your digital ticket is  "+jsonResponse.url +"  will be available after 10 misn");
         }
         }else{
           alert('All the values are mandatory to enter');
