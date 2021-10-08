@@ -12,23 +12,17 @@ yarn dev
 
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
-You can start editing the page by modifying `pages/index.js`. The page auto-updates as you edit the file.
+## About this repo
 
-[API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.js`.
+Don't commit Directly in this repo. You can learn how this project works from this [blog post](https://heyvp7.hashnode.dev/nextjs-conf-alike-conference-website).
 
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
+The backend code for this repo will run in the Cloudflare Workers, you can find the code in another [repo](https://github.com/iamVP7/cloudflare-worker).
 
-## Learn More
+You have to connect this repo with Cloudflare pages, so on each new commit, website is automatically created and deployed.
 
-To learn more about Next.js, take a look at the following resources:
+The deployed website of this repo can be found [here](https://cloudflarepages-9jp.pages.dev/);
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+And the automatically generated page using CloudFlare worker can be found [here](https://cloudflarepages-9jp.pages.dev/conf/0ad2c592c0981c8e7ee1d0b31a97850206fa422e15c3e0063a9da75feb88cbd4)
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
 
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+Watch out this space, more blog post will be updated, so you can replicate the full process easily step-by-step.
